@@ -1,5 +1,5 @@
 variable "resource_group" {
- default ="RG-1"
+ default ="Devopsrg"
 }
 
 variable "location" {
