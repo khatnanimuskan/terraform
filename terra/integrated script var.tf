@@ -35,7 +35,7 @@ variable "SKU" {
 
 variable "Function_App" {
     type = "list"
-    default = ["EI-iPaaS-QA-Function-App","EI-iPaaS-QA-Function-App1","EI-iPaaS-QA-Function-App"]
+    default = ["EI-iPaaS-QA-Function-App","EI-iPaaS-QA-Function-App1","EI-iPaaS-QA-Function-App2"]
 }
 
 variable "storageaccountname" {

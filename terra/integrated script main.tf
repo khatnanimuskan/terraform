@@ -39,8 +39,8 @@ resource "azurerm_function_app" "Function-App" {
   location                  = "${azurerm_resource_group.RG.location}"
   resource_group_name       = "${azurerm_resource_group.RG.name}"
   app_service_plan_id       = "${azurerm_app_service_plan.Service-plan.id}"
-  storage_connection_string = "${azurerm_storage_account.functionstorageaccount.primary_connection_string}"
-  #storage_connection_string = "${azurerm_storage_account.functionstorageaccount[count.index] }"
+  storage_connection_string = "${element(var.functionapp_storage, count.index)}"
+  #storage_connection_string = "${azurerm_storage_account.functionstorageaccount[count.index] }]"
   count                      = "3"
 }
 
