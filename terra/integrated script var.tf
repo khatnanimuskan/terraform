@@ -5,7 +5,7 @@ variable "environment" {
 
 variable "Resource_Group" {
     type ="string"
-    default = "EI-iPaaS-${environment}-RG"
+    default = "EI-iPaaS-RG"
   
 }
 variable "location" {
