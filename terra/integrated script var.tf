@@ -1,7 +1,3 @@
-variable "environment" {
-  default = ""
-}
-
 
 variable "Resource_Group" {
     type ="string"
